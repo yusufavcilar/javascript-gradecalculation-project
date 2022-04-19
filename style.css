@@ -1,0 +1,47 @@
+@import "./reset.css";
+
+body {
+    background-image: linear-gradient(rgb(0, 132, 255), rgb(170, 255, 0));
+    height: 100vh;
+}
+.frame {
+    width: 300px;
+    border: 2px solid rgb(201, 198, 198);
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px grey;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 100px auto;
+}
+p {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+.btn {
+    border-radius: 15px;
+    background-image: linear-gradient(rgb(247, 79, 197), rgb(255, 0, 251));
+    color: white;
+    border-color: transparent;
+    padding: 15px;
+    margin-top: 20px;
+}
+.btn:hover {
+    background-image: linear-gradient(rgb(194, 114, 248), rgb(110, 49, 251));
+}
+.input1 {
+    border-radius: 20px;
+    padding: 15px;
+}
+.input2 {
+    border-radius: 20px;
+    padding: 15px;
+}
+.input3 {
+    border-radius: 20px;
+    padding: 15px;
+}
+.input1.input2.input3::placeholder {
+    opacity: 50%;
+}
