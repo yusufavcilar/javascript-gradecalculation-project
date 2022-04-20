@@ -9,15 +9,24 @@ let lesson2 = null
 let lesson3 = null
 
 input1.addEventListener("input", (event) => {
-   lesson1 = event.target.value
+   if(event.target.value < 0){
+       alert("You can not write negative numbers")
+   }
+    lesson1 = Math.abs(event.target.value)
 })
 
 input2.addEventListener("input", (event) => {
-    lesson2 = event.target.value
+    if(event.target.value < 0){
+        alert("You can not write negative numbers")
+    }
+    lesson2 = Math.abs(event.target.value)
 })
 
 input3.addEventListener("input", (event) =>{
-    lesson3 = event.target.value
+    if(event.target.value < 0){
+        alert("You can not write negative numbers")
+    }
+    lesson3 = Math.abs(event.target.value)
 })
 
 btnHesapla.addEventListener ("click" ,() => {
